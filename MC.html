@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almas Hospital - Medical Report</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url("C:\Users\rajam\Downloads\ChatGPT Image Jun 28, 2026, 09_50_05 PM.png") no-repeat center center/cover;
+    height:100vh;
+    overflow:hidden;
+}
+
+.overlay{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* Left Doctor */
+.left-doctor{
+    position:absolute;
+    left:30px;
+    bottom:0;
+}
+
+.left-doctor img{
+    height:550px;
+}
+
+/* Right Doctor */
+.right-doctor{
+    position:absolute;
+    right:30px;
+    bottom:0;
+}
+
+.right-doctor img{
+    height:550px;
+}
+
+/* Form Container */
+.container{
+    width:700px;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:30px;
+    color:white;
+    box-shadow:0 0 30px rgba(0,0,0,0.4);
+}
+
+.container h1{
+    text-align:center;
+    color:#00ffcc;
+    font-size:42px;
+    margin-bottom:5px;
+}
+
+.container h2{
+    text-align:center;
+    color:#fff;
+    margin-bottom:25px;
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+}
+
+textarea{
+    grid-column:1/3;
+    resize:none;
+}
+
+button{
+    grid-column:1/3;
+    padding:15px;
+    background:#00c853;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#009624;
+}
+
+.footer{
+    margin-top:15px;
+    text-align:center;
+    font-size:14px;
+}
+
+@media(max-width:1200px){
+
+.left-doctor,
+.right-doctor{
+display:none;
+}
+
+.container{
+width:90%;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="left-doctor">
+<img src="C:\Users\rajam\Downloads\ChatGPT Image Jun 28, 2026, 09_50_05 PM.png" alt="Doctor">
+</div>
+
+<div class="right-doctor">
+<img src="C:\Users\rajam\Downloads\ChatGPT Image Jun 28, 2026, 09_50_05 PM.png" alt="Doctor">
+</div>
+
+<div class="container">
+
+<h1>🏥 ALMAS HOSPITAL</h1>
+<h2>Medical Report</h2>
+
+<form>
+
+<input type="text" placeholder="Patient Name">
+
+<input type="number" placeholder="Age">
+
+<select>
+<option>Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+<input type="date">
+
+<input type="text" placeholder="Blood Group">
+
+<input type="text" placeholder="Doctor Name">
+
+<input type="text" placeholder="Department">
+
+<input type="text" placeholder="Phone Number">
+
+<textarea rows="5" placeholder="Diagnosis / Medical Report"></textarea>
+
+<button>Submit Report</button>
+
+</form>
+
+<div class="footer">
+© 2026 Almas Hospital | Caring Beyond Treatment ❤️
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
